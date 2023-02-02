@@ -1,0 +1,20 @@
+<table  class="table table-light">
+ <thead class="table-dark" >
+     <tr>
+    <th>ID</th>
+     <th>Name</th>
+     <th>DESIGNATION</th>
+     <th>EMAIL</th>
+        <th>LOCATION</th>
+     </tr>
+ </thead>
+ <tbody >
+     <tr *ngFor="let user of users$">
+     <td>{{ user.empcode }}</td>
+     <td>{{ user.name }}</td>
+     <td>{{ user.designation }}</td>
+     <td>{{ user.email}}</td>
+      <td>{{ user.location}}</td>
+    </tr>
+ </tbody>
+  </table>
